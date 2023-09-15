@@ -1,0 +1,79 @@
+{
+  "name": "kh-pbtc-frontend",
+  "version": "1.0.0",
+  "description": "PBTc數位生管系統",
+  "author": {
+    "name": "Jeffrey Liao",
+    "email": "yushu_liao@ccpgp.com",
+    "url": "https://gitlab.ccp.com.tw/17805"
+  },
+  "contributors": [
+    {
+      "name": "Jimmy Liao",
+      "email": "chien_ming_liao@ccpgp.com",
+      "url": "https://gitlab.ccp.com.tw/23296"
+    }
+  ],
+  "private": true,
+  "dependencies": {
+    "@handsontable/react": "^12.3.3",
+    "@popperjs/core": "^2.11.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "axios": "0.21.1",
+    "bootstrap": "5.2.3",
+    "bootstrap-icons": "^1.9.1",
+    "chart.js": "^3.9.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "compressorjs": "^1.1.1",
+    "echarts": "^4.8.0",
+    "echarts-for-react": "^2.0.16",
+    "gantt-task-react": "^0.3.9",
+    "handsontable": "^12.3.3",
+    "http-proxy-middleware": "^2.0.6",
+    "popper.js": "^1.16.1",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-datepicker": "^4.17.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "3.4.4",
+    "react-select": "^5.7.4",
+    "react-toastify": "^8.1.0",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+    "serve": "^14.0.1",
+    "sweetalert2": "11.1.7",
+    "web-vitals": "^2.1.0",
+    "xlsx-js-style": "^1.2.0"
+  },
+  "scripts": {
+    "start": "SET HTTPS=true&& react-scripts start",
+    "start-test-port": "SET PORT=21102&& react-scripts start",
+    "start-on-linux": "export HTTPS=true && react-scripts start",
+    "build": "SET NODE_ENV=production&& SET NODE_OPTIONS=--openssl-legacy-provider&& react-scripts --max_old_space_size=4096 build",
+    "build-on-linux": "export NODE_ENV=production && react-scripts --max_old_space_size=2048 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "homepage": "/pbtc",
+  "devDependencies": {
+    "browserslist": "^4.16.6",
+    "eslint-plugin-react": "^7.21.5"
+  },
+  "repository": "https://gitlab.ccp.com.tw/IoT/PMS/KS-PBTC/kh-pbtc-frontend.git",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

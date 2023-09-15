@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 工具類 */
+
+.w-2em {
+  width: 2em;
+}
+
+.w-3em {
+  width: 3em;
+}
+
+.w-4em {
+  width: 4em;
+}
+
+.w-5em {
+  width: 5em;
+}
+
+.w-6em {
+  width: 6em;
+}
+
+.w-7em {
+  width: 7em;
+}
+
+.w-8em {
+  width: 8em;
+}
+
+.w-9em {
+  width: 9em;
+}
+
+.w-10em {
+  width: 10em;
+}
+
+.w-11em {
+  width: 11em;
+}
+
+.w-12em {
+  width: 12em;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+/* 共用的CSS設定 */
+
+.pbt-system .handsontable {
+  font-size: 1rem;
+  color: inherit;
+}
