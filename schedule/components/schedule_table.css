@@ -1,0 +1,21 @@
+.schedule-line {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.schedule-table-container {
+  margin-top: 20px;
+}
+
+.selected-subtable-row {
+  background-color: #f5f5f5;
+}
+
+.schedule-table-nowrap-header {
+  white-space: nowrap;
+}
+
+
+
+
+

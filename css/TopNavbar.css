@@ -1,0 +1,21 @@
+.top-navbar .navbar-brand {
+    cursor: pointer;
+}
+
+.top-navbar .nav-item:hover {
+    cursor: pointer;
+    background-color: rgb(125, 125, 125);
+    border-radius: 0.375rem;
+}
+
+.top-navbar .nav-item .nav-link {
+    color: rgb(125, 125, 125);
+}
+
+.top-navbar .nav-item .nav-link:hover {
+    color: white;
+}
+
+.top-navbar li {
+    list-style-type: none;
+}

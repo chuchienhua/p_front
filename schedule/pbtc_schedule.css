@@ -1,0 +1,31 @@
+/* SCHEDULE */
+
+.pbtc-schedule-container {
+    /* margin-top: calc(1rem);
+    min-height: calc(100vh - 0.5rem - 16px); */
+    /* margin-top: calc(-1.5rem - 17px); */
+    /* min-height: calc(100vh - 0.5rem - 16px); */
+}
+
+
+.nav-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    cursor: pointer;
+}
+
+.nav-tabs .nav-item .nav-link {
+    margin: 0px 1px;
+    padding: 6px 12px;
+    background-color: rgb(200, 200, 200);
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+}
+

@@ -1,0 +1,44 @@
+.management-container {
+    height: calc(100vh - 2.5rem - 16px);
+    display: flex;
+    flex-direction: column;
+}
+
+.management-query-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.management-query-container .input-group {
+    display: inline-flex;
+    width: inherit;
+}
+
+.management-handsontable-container {
+    width: 100%;
+    min-height: 8rem;
+    overflow: hidden;
+}
+
+.management-handsontable-container .handsontable thead th {
+    vertical-align: middle;
+}
+
+.management-handsontable-container.bg-initial .handsontable td {
+    background-color: initial;
+}
+
+/*隱藏透明區域，避免手機上很難點到*/
+.management-handsontable-container .handsontable .topSelectionHandle-HitArea,
+.management-handsontable-container .handsontable .bottomSelectionHandle-HitArea {
+    max-width: 0;
+}
+
+.material-inv-trace-report {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

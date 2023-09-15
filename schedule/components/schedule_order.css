@@ -1,0 +1,9 @@
+.selected-order-row {
+  background-color: #f5f5f5;
+}
+
+
+.order-custom-checkbox {
+  width: 24px; /* Customize the width as needed */
+  height: 24px; /* Customize the height as needed */
+}

@@ -1,0 +1,44 @@
+.scrollable-box {
+  min-height: 70vh;
+  /* 70% of viewport height */
+  max-height: 70vh;
+  /* 70% of viewport height */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.scrollable-box .list-group-item {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Add some spacing between the checkbox and label */
+  /* Add more styles as needed */
+}
+/* Change background color of selected items in the left column to light gray */
+#leftList .list-group-item.active {
+  background-color: #f2f2f2; /* Light gray color */
+  color: #333; /* Change text color to dark gray */
+}
+
+/* Change background color of selected items in the right column to another color */
+#rightList .list-group-item.active {
+  background-color: #dcdcdc; /* Another light gray color */
+  color: #333; /* Change text color to dark gray */
+}
+
+/* Vertically center text and checkboxes within list items */
+.list-group-item {
+  display: flex;
+  align-items: center;
+  text-align:center;
+}
+
+/* Vertically center content within list items */
+.centered-content {
+  display: flex;
+  text-align:center;
+}

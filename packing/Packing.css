@@ -1,0 +1,203 @@
+/* 包裝共用 */
+
+.max-width-3em {
+    max-width: 3em !important;
+}
+
+.max-width-4em {
+    max-width: 4em !important;
+}
+
+.max-width-6em {
+    max-width: 6em !important;
+}
+
+.min-height-12em {
+    min-height: 12em !important;
+}
+
+.min-height-15em {
+    min-height: 15em !important;
+}
+
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+
+.packing-container {
+    height: calc(100vh - 2.5rem - 16px);
+    display: flex;
+    flex-direction: column;
+}
+
+.packing-query-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.packing-query-container .input-group {
+    display: inline-flex;
+    width: inherit;
+}
+
+.packing-handsontable-container {
+    width: 100%;
+    min-height: 8rem;
+    overflow: hidden;
+}
+
+.packing-handsontable-container .handsontable thead th {
+    vertical-align: middle;
+}
+
+.packing-handsontable-container.bg-initial .handsontable td {
+    background-color: initial;
+}
+
+/*隱藏透明區域，避免手機上很難點到*/
+.packing-handsontable-container .handsontable .topSelectionHandle-HitArea,
+.packing-handsontable-container .handsontable .bottomSelectionHandle-HitArea {
+    max-width: 0;
+}
+
+@media print {
+    .top-navbar {
+        display: none;
+    }
+
+    .packing-container {
+        display: block;
+    }
+
+    .packing-handsontable-container {
+        height: 100vh;
+        overflow: visible;
+    }
+
+    .packing-container .packing-query-container>* {
+        display: none;
+    }
+
+    .packing-container .packing-query-container>.input-group:first-child {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 399px) {
+    .packing-container .nav-pills .nav-link {
+        padding: 0.375rem 0.75rem;
+    }
+}
+
+/* 包裝作業 */
+
+.packing-work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input.remainder-lono:not([value=""]) {
+    color: rgb(220, 53, 69);
+    border-color: #dc3545;
+}
+
+.packing-work-group-row {
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.packing-work-group-row .form-group {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.packing-work-group-row .form-group>label {
+    width: 8rem;
+    text-align: right;
+}
+
+.packing-work-group-row .form-group>label.w-9em {
+    width: 9em;
+}
+
+.packing-work-group-row .form-group>label::after {
+    content: '：';
+}
+
+.packing-work-group-row .form-group>.form-control {
+    width: 9rem;
+    flex-grow: 0;
+}
+
+.packing-handsontable-container.packing-details {
+    min-height: 50vh;
+}
+
+@media (max-width: 575.98px) {
+    .packing-work-group-row .form-group {
+        width: calc(100% - 0.5em);
+    }
+
+    .packing-work-group-row .form-group>textarea.form-control {
+        flex-grow: 1;
+    }
+}
+
+/* 包裝報表 */
+
+.packing-daily-report,
+.packing-stat-report {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.packing-daily-report .packing-handsontable-container,
+.packing-start-report .packing-handsontable-container {
+    overflow: initial;
+}
+
+.packing-daily-report .packing-work-group-row {
+    display: inline-block;
+    max-width: 32rem;
+}
+
+.packing-daily-report .packing-work-group-row .form-group {
+    width: 15rem;
+}
+
+.packing-stat-report .packing-work-group-row .form-group {
+    display: flex;
+}
+
+.packing-daily-report .packing-work-group-row .form-group>label {
+    width: 7rem;
+    text-align: right;
+}
+
+.packing-daily-report .packing-work-group-row .form-group>.form-control,
+.packing-stat-report .packing-work-group-row .form-group>.form-control {
+    width: 6rem;
+    flex-grow: 0;
+}
+
+.packing-handsontable-container.not-meet-analysis-table {
+    min-height: 15em;
+}
+
+.packing-report-chart-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.packing-report-chart {
+    max-width: 100%;
+    flex-shrink: 1;
+}

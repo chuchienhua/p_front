@@ -1,0 +1,212 @@
+.silo-status-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.silo-status-table thead,
+.silo-status-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.silo-status-table th,
+.silo-status-table td {
+    height: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.silo-status-table .silo-name {
+    width: 60px;
+    background-color: #f2f2f2;
+}
+
+.silo-status-table .qty {
+    width: 60px;
+}
+
+.silo-status-table th {
+    background-color: #f2f2f2;
+}
+
+.silo-status-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.silo-status-table tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* SiloChart */
+.silo-status-grid {
+    width: 270px;
+    height: 200px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 0.25rem;
+    display: grid;
+    grid-template-areas:
+        'siloName siloName'
+        'chart productNo'
+        'chart lotNo'
+        'chart qty';
+    grid-template-columns: 90px auto;
+    gap: 10px;
+    background-color: #313131;
+    padding: 5px;
+}
+
+.silo-status-grid>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.silo-status-grid .silo-chart {
+    grid-area: chart;
+    position: relative;
+    width: 80px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: transparent;
+    background-color: rgb(218, 218, 218);
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.silo-status-grid .silo-chart:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 100%;
+    border-radius: 50%;
+    top: -10.5px;
+    z-index: 1;
+    background-color: rgb(218, 218, 218);
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.silo-status-grid .silo-chart:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 100%;
+    border-radius: 50%;
+    bottom: -10px;
+    background-color: rgb(255, 255, 0);
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.silo-status-grid .silo-chart-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--height);
+    background-image: linear-gradient(to top, rgb(255, 255, 30), rgb(255, 255, 150));
+    text-align: center;
+}
+
+.silo-status-grid .silo-chart-content::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+    border: 2px solid rgb(208, 208, 0);
+    border-radius: 50%;
+    top: -10.5px;
+    z-index: 1;
+}
+
+.silo-status-grid .silo-chart-content:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -10px;
+}
+
+.silo-status-grid .silo-chart .silo-chart-tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 2px;
+    font-size: 0.125rem;
+    color: white;
+    border-radius: 0.25rem;
+    background-color: #313131;
+    border: 1px solid rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.silo-status-grid .silo-chart .silo-chart-tooltip:hover {
+    cursor: pointer;
+}
+
+.silo-status-grid .silo-name {
+    grid-area: siloName;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.silo-status-grid .prd-pc {
+    grid-area: productNo;
+    overflow-y: hidden;
+}
+
+.silo-status-grid .prd-pc::-webkit-scrollbar {
+    height: 8px;
+}
+
+.silo-status-grid .prd-pc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.silo-status-grid .prd-pc::-webkit-scrollbar-thumb {
+    background: rgb(156, 156, 156);
+    border-radius: 3px;
+}
+
+.silo-status-grid .prd-pc::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 128, 128);
+}
+
+.silo-status-grid .lot-no {
+    grid-area: lotNo;
+    overflow-y: hidden;
+}
+
+.silo-status-grid .lot-no::-webkit-scrollbar {
+    height: 8px;
+}
+
+.silo-status-grid .lot-no::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.silo-status-grid .lot-no::-webkit-scrollbar-thumb {
+    background: rgb(156, 156, 156);
+    border-radius: 3px;
+}
+
+.silo-status-grid .lot-no::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 128, 128);
+}
+
+.silo-status-grid .qty {
+    grid-area: qty;
+}

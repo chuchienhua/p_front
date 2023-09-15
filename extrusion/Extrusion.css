@@ -1,0 +1,20 @@
+.nav-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    cursor: pointer;
+}
+
+.nav-tabs .nav-item .nav-link {
+    margin: 0px 1px;
+    padding: 6px 12px;
+    background-color: rgb(200, 200, 200);
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+}

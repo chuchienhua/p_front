@@ -1,0 +1,20 @@
+.recipes-page {}
+
+.recipes-page .recipes-detail-table {
+    width: 100%;
+    height: calc(100vh - 5.5rem - 30px);
+    flex-grow: 1;
+    overflow: hidden;
+    height: 12em;
+}
+
+.recipes-page .query-form {
+    width: 100%;
+    min-width: fit-content;
+    /* height: calc(2rem + 14px); */
+    flex-grow: 0;
+}
+
+.recipes-page .dropdown-item:hover{
+    cursor: pointer;
+}
