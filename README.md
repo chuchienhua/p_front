@@ -6,4 +6,4 @@
 # 部署資訊
  - tpiot主機
  - Windows Server 2019
- - Jenkins(http://jenkins.ccp.com.tw:8080/view/IOT/job/TP-pbtc-frontend/)
+ - Jenkins
